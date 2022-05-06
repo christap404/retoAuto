@@ -6,7 +6,6 @@ import java.util.*;
 
 public class fileTxt {
 
-
     private String[] asociado;
 
     public void read(String nombreArchivo){

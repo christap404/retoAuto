@@ -8,7 +8,7 @@ Feature: as a user want to the form of the page
   @1
   Scenario Outline: the user complete the form
     When the user enter the information <country> <city> <password>
-    Then the user see the message
+    Then the user see the message This is just a dummy form,
     Examples:
       | country                        | city     | password    |
       | British Indian Ocean Territory | mosku    | 123password |

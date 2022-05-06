@@ -33,8 +33,8 @@ public class autFormStepDefinitions {
         OnStage.theActorInTheSpotlight().attemptsTo(completeForm.complete(country, city, password));
     }
 
-    @Then("^the user see the message$")
-    public void theUserSeeTheMessage() {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidateTxt.validate(), Matchers.containsString("This is just a dummy form,")));
+    @Then("^the user see the message (.*)$")
+    public void theUserSeeTheMessage(String mensage) {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidateTxt.validate(), Matchers.containsString(mensage)));
     }
 }

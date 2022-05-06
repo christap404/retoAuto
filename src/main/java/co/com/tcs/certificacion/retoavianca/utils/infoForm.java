@@ -51,7 +51,6 @@ public class infoForm {
         File archivo;
         FileReader fr;
         BufferedReader br;
-        String[] asociado = new String[1];
         try {
             archivo = new File("src/main/java/co/com/tcs/certificacion/retoavianca/utils/insumo.txt");
             fr = new FileReader(archivo);
